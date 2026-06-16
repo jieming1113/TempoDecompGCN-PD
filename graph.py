@@ -146,9 +146,10 @@ def normalize_undigraph(A):
     DAD = np.dot(np.dot(Dn, A), Dn)
     return DAD
 
-graph = Graph(max_hop=2, strategy='spatial')
-graph.A = graph.A[:4]
-print(graph.A.shape)
-print("==================")
-graph = Graph(max_hop=1, strategy='spatial')
-print(graph.A[0])
+if __name__ == '__main__':
+    graph = Graph(max_hop=2, strategy='spatial')
+    graph.A = graph.A[:4]
+    print(graph.A.shape)
+    print("==================")
+    graph = Graph(max_hop=1, strategy='spatial')
+    print(graph.A[0])

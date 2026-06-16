@@ -112,7 +112,7 @@ def load_dataset(data_dir):
     Load the REMAP turning dataset.
 
     Directory layout expected:
-        <data_dir>/../REMAP/2-labelled_Turning/2_group/
+        <data_dir>/../REMAP/2-Turning/2_group/
             0_json_remove1/   (healthy controls)
             1_json_remove1/   (PD patients)
 
@@ -126,8 +126,8 @@ def load_dataset(data_dir):
     subjects : np.ndarray  (N,)  string subject IDs
     """
     all_data, all_labels, all_subjects = [], [], []
-    class_0_dir = os.path.join(data_dir, '../REMAP/2-labelled_Turning/2_group/0_json_remove1')
-    class_1_dir = os.path.join(data_dir, '../REMAP/2-labelled_Turning/2_group/1_json_remove1')
+    class_0_dir = os.path.join(data_dir, '../REMAP/2-Turning/2_group/0_json_remove1')
+    class_1_dir = os.path.join(data_dir, '../REMAP/2-Turning/2_group/1_json_remove1')
 
     for label, label_dir in [(0, class_0_dir), (1, class_1_dir)]:
         if not os.path.exists(label_dir):
