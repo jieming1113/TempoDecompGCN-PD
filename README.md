@@ -1,5 +1,5 @@
 # TempoDecompGCN-PD
- Official implementation of "Weakly-Supervised Temporal Decomposition with GCNs for Parkinsonian Turning Assessment" (MICCAI 2026)
+
 ## Overview
 
 We propose a weakly-supervised temporal decomposition framework for skeleton-based Parkinsonian turning assessment. The framework learns to partition turning sequences into temporal instances from video-level diagnostic labels alone, without any frame-level phase annotations.
@@ -60,6 +60,7 @@ Training runs subject-level 5-fold cross-validation and prints per-fold and summ
 ## File Structure
 
 ```
+├── REMAP          # Dataset
 ├── graph.py       # Skeleton graph definition (17-joint layout)
 ├── model.py       # Model architecture (TempoDecompGCN)
 ├── dataset.py     # Data loading, preprocessing, augmentation
