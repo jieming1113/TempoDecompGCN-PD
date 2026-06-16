@@ -22,7 +22,7 @@ pip install torch numpy scikit-learn
 
 ## Data Preparation
 
-This code uses the **REMAP dataset** [(Morgan et al., Scientific Data 2023)](https://doi.org/10.1038/s41597-023-02663-5). Access must be requested from the dataset authors.
+This code uses the **REMAP dataset** [(Morgan et al., Scientific Data 2023)](https://doi.org/10.1038/s41597-023-02663-5).
 
 Expected directory structure:
 
@@ -71,7 +71,7 @@ Training runs subject-level 5-fold cross-validation and prints per-fold and summ
 If you find this code useful, please cite our paper:
 
 ```bibtex
-@inproceedings{zhang2026wstdpd,
+@inproceedings{zhang2026weakly,
   title     = {Weakly-Supervised Temporal Decomposition with Graph Convolutional Networks for Parkinsonian Turning Assessment},
   author    = {Jieming Zhang, Tai-Myoung Chung and Hogun Park},
   booktitle = {Medical Image Computing and Computer Assisted Intervention (MICCAI)},
