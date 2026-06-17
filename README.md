@@ -22,7 +22,7 @@ pip install torch numpy scikit-learn
 
 ## Data Preparation
 
-This code uses the **REMAP dataset** [(Morgan et al., Scientific Data 2023)](https://doi.org/10.1038/s41597-023-02663-5).
+This code uses the **REMAP dataset** [(Morgan et al., Scientific Data 2023)](https://doi.org/10.1038/s41597-023-02663-5), which is not publicly available due to privacy constraints; demo data is provided.
 
 Expected directory structure:
 
@@ -31,14 +31,14 @@ REMAP/
 └── 2-Turning/
     └── 2_group/
         ├── 0_json_remove1/    # Healthy controls (label 0)
-        │   ├── Pt001_xxx.json
+        │   ├── HC001_xxx.json
         │   └── ...
         └── 1_json_remove1/    # PD patients (label 1)
-            ├── Pt204_xxx.json
+            ├── PD204_xxx.json
             └── ...
 ```
 
-Each JSON file contains a skeleton sequence with 17 keypoints (HRNet 2D pose format). The filename prefix (e.g., `Pt204`) is used as the subject ID for subject-level cross-validation.
+Each JSON file contains a skeleton sequence with 17 keypoints (HRNet 2D pose format). The filename prefix (e.g., `PD204`) is used as the subject ID for subject-level cross-validation.
 
 Place the `REMAP/` folder one level above the code directory, or update the path in `dataset.py`:
 
